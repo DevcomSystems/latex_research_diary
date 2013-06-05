@@ -19,7 +19,10 @@ To compile all your entries use:
 This creates the ResearchDiary.pdf file with all your entries inside.
 
 ## Other options ##
-
+Labels are created for each page in the form \label{01January2013}. Use the \pageref command to reference them:
+```latex
+  \pageref{01January2013}
+```
 To force create a new entry for the day, overwriting the current day (if it exists) use:
 ```bash
   $> make newforce
@@ -38,4 +41,5 @@ And of course, to clean up the mess:
 ## TODO ##
 * Create title page
 * Create table of contents page
-
+* Create bibliography (bibtex)
+* Fix referencing for newfiletime pages (the labels need to include timestamp)
