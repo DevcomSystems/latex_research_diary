@@ -1,0 +1,27 @@
+%%% Research Diary - Entry
+%%% Template by Mikhail Klassen, April 2013
+%%%
+\documentclass[11pt,letterpaper]{article}
+
+% This input command is needed to use the Makefile
+\newcommand\inputfile[1]{%
+    \InputIfFileExists{#1}{}{\typeout{No file #1.}}%
+}
+
+% Create variables for the header
+\newcommand{\varYear}{2013}
+\newcommand{\varMonth}{July}
+\newcommand{\varDay}{01}
+\newcommand{\workingDate}{\textsc{\varYear $|$ \varMonth $|$ \varDay}}
+\newcommand{\userName}{Peter Devlin}
+\newcommand{\institution}{Melbourne University}
+
+\usepackage{researchdiary_png}
+% To add your univeristy logo to the upper right, simply
+% upload a file named "logo.png" using the files menu above.
+
+\begin{document}
+
+\inputfile{entries.tex}
+
+\end{document}
