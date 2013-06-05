@@ -3,34 +3,39 @@ latex_research_diary
 
 This is the template for a LaTeX based reasearch diary or digital log book.
 
-# Usage #
+## Usage ##
 N.B.: The Makefile currently only works on *nix based systems.
 
 To create a new entry for today use:
+```bash
   $> make new
+```
 This this will create a new file in the entries directory with a yyyymmdd.tex filename. It will also open it immediately with sublime.
 
 To compile all your entries use:
+```bash
   $> make
+```
 This creates the ResearchDiary.pdf file with all your entries inside.
 
-* * * *
-
-# Other options #
+## Other options ##
 
 To force create a new entry for the day, overwriting the current day (if it exists) use:
+```bash
   $> make newforce
-  
+```
 To create multiple entrys for a day use:
+```bash
   $> make newfiletime
+```
 This creates a new entry file with the format yyyymmddHHMMSS.tex
 
-And of course, clean up the mess:
+And of course, to clean up the mess:
+```bash
   $> make clean
-  
-* * * *
+```
 
-# TODO #
+## TODO ##
 * Create title page
 * Create table of contents page
 
